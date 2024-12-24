@@ -1,0 +1,5 @@
+API_KEY = ''
+API_URL = 'https://api.openweathermap.org/data/2.5/weather'
+UNITS = 'metric'
+LANG = 'ru'
+FILE_EXCEL = 'data.xlsx'
