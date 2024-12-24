@@ -160,7 +160,7 @@ class WeatherWidget(wx.Frame):
         info_sizer = wx.BoxSizer(wx.HORIZONTAL)
 
         # Temperature
-        temp_icon = wx.Bitmap("temp.png", wx.BITMAP_TYPE_PNG)
+        temp_icon = wx.Bitmap("images/temp.png", wx.BITMAP_TYPE_PNG)
         temp_icon_ctrl = wx.BitmapButton(panel, bitmap=temp_icon)
         temp_icon_ctrl.Bind(wx.EVT_ERASE_BACKGROUND, self.on_erase_background)
 
@@ -172,7 +172,7 @@ class WeatherWidget(wx.Frame):
         temp_sizer.Add(self.temp_label, 0, wx.ALL | wx.CENTER, 0)
 
         # Windy
-        wind_icon = wx.Bitmap("windy.png", wx.BITMAP_TYPE_PNG)
+        wind_icon = wx.Bitmap("images/windy.png", wx.BITMAP_TYPE_PNG)
         wind_icon_ctrl = wx.BitmapButton(panel, bitmap=wind_icon)
         wind_icon_ctrl.Bind(wx.EVT_ERASE_BACKGROUND, self.on_erase_background)
 
@@ -201,7 +201,7 @@ class WeatherWidget(wx.Frame):
         cond_sizer.Add(self.cond_label, 0, wx.ALL | wx.CENTER, 0)
 
         # Humidity
-        huma_icon = wx.Bitmap("humidity.png", wx.BITMAP_TYPE_PNG)
+        huma_icon = wx.Bitmap("images/humidity.png", wx.BITMAP_TYPE_PNG)
         huma_icon_ctrl = wx.BitmapButton(panel, bitmap=huma_icon)
         huma_icon_ctrl.Bind(wx.EVT_ERASE_BACKGROUND, self.on_erase_background)
 
@@ -218,7 +218,7 @@ class WeatherWidget(wx.Frame):
         confu_merge_sizer.Add(huma_sizer, 0, wx.ALL | wx.LEFT, 0)
 
         # SunRise
-        sunrise_icon = wx.Bitmap("sunrise.png", wx.BITMAP_TYPE_PNG)
+        sunrise_icon = wx.Bitmap("images/sunrise.png", wx.BITMAP_TYPE_PNG)
         sunrise_icon_ctrl = wx.BitmapButton(panel, bitmap=sunrise_icon)
         sunrise_icon_ctrl.Bind(wx.EVT_ERASE_BACKGROUND, self.on_erase_background)
 
@@ -230,7 +230,7 @@ class WeatherWidget(wx.Frame):
         sunrise_sizer.Add(self.sunrise_label, 0, wx.ALL | wx.CENTER, 0)
 
         # SunSet
-        sunset_icon = wx.Bitmap("sunset.png", wx.BITMAP_TYPE_PNG)
+        sunset_icon = wx.Bitmap("images/sunset.png", wx.BITMAP_TYPE_PNG)
         sunset_icon_ctrl = wx.BitmapButton(panel, bitmap=sunset_icon)
         sunset_icon_ctrl.Bind(wx.EVT_ERASE_BACKGROUND, self.on_erase_background)
 
